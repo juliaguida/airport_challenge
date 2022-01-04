@@ -1,5 +1,14 @@
 class Airport
-  def empty?
-    true
+
+  def initialize
+    @hangar = []
+  end
+
+  def land(plane)
+    @hangar << plane
+  end
+
+  def hangar
+    @hangar
   end
 end
